@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Current Date/Time Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1>Welcome to current date & time <span class="glyphicon glyphicon-time"></span></h1>
+            <p>This is a simple date & time page </p>
+        </div>
+
+        {% if day %}
+        <h3> Current Date is: {{ day }}.{{ month}}.{{ year }} </h3>
+        <h3> Current Time is: {{ hour }}:{{ minute }}:{{ second }} </h3>
+        {% endif %}
+
+    </div>
+
+</body>
+
+</html>
